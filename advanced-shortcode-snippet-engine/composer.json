@@ -1,0 +1,44 @@
+{
+  "name": "minhas/advanced-shortcode-snippet-engine",
+  "description": "Advanced Shortcode & Snippet Engine for WordPress",
+  "type": "wordpress-plugin",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "Minhas Hussain",
+      "email": "minhas@example.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "ASSE\\Core\\": "core/",
+      "ASSE\\Admin\\": "admin/",
+      "ASSE\\Frontend\\": "frontend/",
+      "ASSE\\Snippets\\": "snippets/",
+      "ASSE\\Database\\": "database/",
+      "ASSE\\Conditions\\": "conditions/",
+      "ASSE\\API\\": "api/",
+      "ASSE\\Security\\": "security/",
+      "ASSE\\Includes\\": "includes/"
+    }
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.7",
+    "wp-coding-standards/wpcs": "^2.3",
+    "phpunit/phpunit": "^9.0",
+    "brain/monkey": "^2.6"
+  },
+  "scripts": {
+    "cs": "phpcs --standard=WordPress",
+    "cs-fix": "phpcbf --standard=WordPress",
+    "test": "phpunit"
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/php-content-repositories": true
+    }
+  }
+}

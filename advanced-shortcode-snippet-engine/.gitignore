@@ -1,0 +1,36 @@
+# WordPress
+wp-config.php
+wp-content/uploads/
+wp-content/cache/
+
+# Dependencies
+vendor/
+node_modules/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+asse-logs/
+
+# Build files
+*.min.css
+*.min.js
+dist/
+build/
+
+# Testing
+.phpunit.result.cache
+coverage/
+
+# Composer
+composer.lock
