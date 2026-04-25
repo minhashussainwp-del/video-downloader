@@ -1,0 +1,64 @@
+/**
+ * Frontend Styles for Advanced Shortcode & Snippet Engine
+ */
+
+/* SQL Results Table */
+.asse-sql-results {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.asse-sql-results th,
+.asse-sql-results td {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.asse-sql-results th {
+    background: #f5f5f5;
+    font-weight: 600;
+}
+
+.asse-sql-results tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.asse-sql-results tr:hover {
+    background: #f0f0f0;
+}
+
+/* JSON Output */
+.asse-json-output {
+    background: #f5f5f5;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow-x: auto;
+    font-family: monospace;
+    font-size: 13px;
+}
+
+/* CSV Output */
+.asse-csv-output {
+    background: #f5f5f5;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow-x: auto;
+    font-family: monospace;
+    font-size: 13px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .asse-sql-results {
+        font-size: 14px;
+    }
+    
+    .asse-sql-results th,
+    .asse-sql-results td {
+        padding: 6px 8px;
+    }
+}
